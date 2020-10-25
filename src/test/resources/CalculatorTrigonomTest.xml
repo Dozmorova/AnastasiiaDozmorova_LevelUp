@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="CalculatorTrigonomTestSuit">
+    <test name="CalculatorTrigonomTest">
+        <classes>
+            <class name="levelup.homework5.TgCalculatorIT"/>
+            <class name="levelup.homework5.CtgCalculatorIT"/>
+            <class name="levelup.homework5.CosCalculatorIT"/>
+            <class name="levelup.homework5.SinCalculatorIT"/>
+        </classes>
+    </test>
+</suite>

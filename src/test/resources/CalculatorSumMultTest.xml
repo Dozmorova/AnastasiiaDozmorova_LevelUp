@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="CalculatorSumMultTestSuit">
+    <test name="CalculatorSumMultTest">
+        <classes>
+            <class name="levelup.homework5.SumCalculatorIT"/>
+            <class name="levelup.homework5.MultCalculatorIT"/>
+        </classes>
+    </test>
+</suite>
