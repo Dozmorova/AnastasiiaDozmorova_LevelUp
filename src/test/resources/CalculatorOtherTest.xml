@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="CalculatorOtherTestSuit">
+    <test name="OtherTest">
+        <classes>
+            <class name="levelup.homework5.PowCalculatorIT"/>
+            <class name="levelup.homework5.SqrtCalculatorIT"/>
+            <class name="levelup.homework5.IsPositiveCalculatorIT"/>
+            <class name="levelup.homework5.IsNegativeCalculatorIT"/>
+        </classes>
+    </test>
+</suite>
