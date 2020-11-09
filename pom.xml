@@ -8,6 +8,12 @@
     <artifactId>levelup</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
+    <groupId>ru.levelup.qa.at</groupId>
+    <artifactId>levelup</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
     <properties>
         <!-- project settings -->
         <java.source.version>1.8</java.source.version>
@@ -30,6 +36,7 @@
             <scope>test</scope>
         </dependency>
 
+
         <dependency>
             <groupId>ru.levelup.qa.at.calculator</groupId>
             <artifactId>calculator</artifactId>
@@ -38,6 +45,8 @@
             <systemPath>${project.basedir}\calculator-1.0.jar</systemPath>
         </dependency>
 
+
+
         <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -45,7 +54,16 @@
             <version>${selenium-java.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
     </dependencies>
+
+    </dependencies>
+
 
     <build>
         <plugins>
@@ -59,6 +77,9 @@
                     <encoding>${project.encoding}</encoding>
                 </configuration>
             </plugin>
+        </plugins>
+    </build>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
