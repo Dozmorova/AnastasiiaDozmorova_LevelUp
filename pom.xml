@@ -3,9 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>ru.levelup.qa.at</groupId>
     <artifactId>levelup</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+
+    <groupId>ru.levelup.qa.at</groupId>
+    <artifactId>levelup</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
     <properties>
         <!-- project settings -->
         <java.source.version>1.8</java.source.version>
@@ -18,6 +26,7 @@
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
     </properties>
+
     <dependencies>
         <!-- Test NG -->
         <dependency>
@@ -26,6 +35,8 @@
             <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
+
+
         <dependency>
             <groupId>ru.levelup.qa.at.calculator</groupId>
             <artifactId>calculator</artifactId>
@@ -33,6 +44,9 @@
             <scope>system</scope>
             <systemPath>${project.basedir}\calculator-1.0.jar</systemPath>
         </dependency>
+
+
+
         <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -47,6 +61,10 @@
         </dependency>
 
     </dependencies>
+
+    </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
@@ -61,4 +79,28 @@
             </plugin>
         </plugins>
     </build>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${maven-failsafe-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
